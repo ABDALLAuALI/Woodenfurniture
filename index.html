@@ -19,6 +19,20 @@
         
         }
 
+
+        @media (max-width:'623px'){
+
+            .box1{
+                top:20px ;
+                left:20px ;
+            }
+
+
+
+
+
+        }
+
     </style>
 </head>
 <body dir="rtl">
@@ -71,7 +85,7 @@
         <img src="./pic/home.png" alt="" title="" class="w-[100%] h-[100%] object-fill "/>
 
 
-        <div class="absolute top-[450px] left-[520px] w-[450px] h-[150px] flex flex-col justify-around items-center ">
+        <div class="absolute top-[450px] left-[520px] sm:left-[150px] sm:top-[320px]  w-[450px] h-[150px] flex flex-col justify-around items-center box1 ">
 
             <p class="font-bold text-white">
 تواصل معنا — فقط اضغط على الزر أدناه
@@ -92,13 +106,13 @@
 
     </aside>
 
-    <div class="w-[100%] h-[400px] flex justify-center items-center">
+    <div class="w-[100%] h-[400px] sm:h-auto flex justify-center items-center">
 
-        <aside class="w-[80%] h-[90%] flex justify-around items-center " dir="rtl">
+        <aside class="w-[80%] h-[90%] flex justify-around items-center sm:flex-col sm:flex-wrap  sm:m-[50px] " dir="rtl">
 
             <!--  -->
 
-            <div class="w-[250px] h-auto rounded-md flex flex-col justify-start items-center shadow-2xl  ">
+            <div data-aos="zoom-in" class="w-[250px] h-auto rounded-md flex flex-col justify-start items-center shadow-2xl m-[4px]  ">
 
                 <img src="./pic/1.png" alt="" title="" class="w-[100%] h-[200px] mb-[5px] object-fill "/>
 
@@ -115,7 +129,7 @@
             <!--  -->
                 <!--  -->
 
-            <div class="w-[250px] h-auto rounded-md flex flex-col justify-start items-center r shadow-2xl  ">
+            <div data-aos="zoom-in" class="w-[250px] h-auto rounded-md flex flex-col justify-start items-center r shadow-2xl m-[4px]  ">
 
                 <img src="./pic/2.png" alt="" title="" class="w-[100%] h-[200px] mb-[5px] object-fill "/>
 
@@ -131,7 +145,7 @@
 
                     <!--  -->
 
-            <div class="w-[250px] h-auto rounded-md flex flex-col justify-start items-center shadow-2xl">
+            <div data-aos="zoom-in" class="w-[250px] h-auto rounded-md flex flex-col justify-start items-center shadow-2xl m-[4px]">
 
                 <img src="./pic/3.png" alt="" title="" class="w-[100%] h-[200px] mb-[5px] object-fill "/>
 
@@ -148,7 +162,7 @@
 
                     <!--  -->
 
-            <div class="w-[250px] h-auto rounded-md flex flex-col justify-start items-center shadow-2xl ">
+            <div data-aos="zoom-in"  class="w-[250px] h-auto rounded-md flex flex-col justify-start items-center shadow-2xl m-[4px] ">
 
                 <img src="./pic/4.png" alt="" title="" class="w-[100%] h-[200px] mb-[5px] object-fill "/>
 
@@ -194,7 +208,7 @@
     </section>
 
 
-    <aside class="w-[100%] h-[600px] flex justify-center items-center relative ">
+    <aside data-aos="zoom-in" class="w-[100%] h-[600px] flex justify-center items-center relative ">
 
         <div class="w-[90%] h-[85%] shadow-2xl flex justify-center items-center ">
 
@@ -217,7 +231,7 @@
 
     </aside>
 
-    <footer class="w-[100%] h-[400px] bg-black flex justify-center items-center">
+    <footer data-aos="fade-up" class="w-[100%] h-[400px] bg-black flex justify-center items-center">
 
 
         <a href="https://wa.me/966564117357" class=" text-white underline ">
@@ -231,5 +245,13 @@
     
 
 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!-- <script>
+document.getElementById('year').textContent = new Date().getFullYear();
+</script> -->
+<script>
+  AOS.init();
+</script>
 </body>
 </html>

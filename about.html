@@ -6,6 +6,8 @@
     <title>Home</title>
     <link rel="stylesheet" href="./css/outputindex.css"/>
     <link rel="icon" href=""/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <style>
         .bgixed{
 
@@ -83,7 +85,7 @@ footer{margin-top:18px;color:var(--muted);font-size:13px;text-align:center}
 
 
 
-<div class="card services" style="margin-top:14px">
+<div data-aos="zoom-in" class="card services" style="margin-top:14px">
 <h3>خدماتنا</h3>
 <ul>
 <li>تصميم أثاث حسب الطلب (مطابخ، غرف نوم، غرف معيشة)</li>
@@ -163,10 +165,13 @@ footer{margin-top:18px;color:var(--muted);font-size:13px;text-align:center}
     </footer>
     
 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 <!-- <script>
 document.getElementById('year').textContent = new Date().getFullYear();
 </script> -->
-
+<script>
+  AOS.init();
+</script>
     </body>
     </html>
